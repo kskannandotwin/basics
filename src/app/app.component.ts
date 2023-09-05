@@ -9,5 +9,9 @@ import { Component } from "@angular/core";
 })
 
 export class AppComponent {
+  name = 'luis';
 
+  getName() {
+    return this.name;
+  }
 }
