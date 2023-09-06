@@ -16,7 +16,7 @@ export class AppComponent {
     return this.name;
   }
 
-  changeImage(event: KeyboardEvent) {
-    this.imgUrl = event.target.value;
+  changeImage(e: KeyboardEvent) {
+    this.imgUrl = (e.target as HTMLInputElement).value;
   }
 }
