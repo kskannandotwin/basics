@@ -11,6 +11,7 @@ import { Component } from "@angular/core";
 export class AppComponent {
   name = 'luis ramirez';
   imgUrl = 'https://picsum.photos/id/237/500/500';
+  currentDate = new Date();
 
   getName() {
     return this.name;
