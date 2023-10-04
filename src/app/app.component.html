@@ -7,4 +7,6 @@
 <p>Hello {{ name | titlecase }}!</p>
 <p>Hello {{ getName() }}!</p>
 <p>{{ 15 + 13 }}</p>
-<p>{{ currentDate | date: 'M/d/yy, h:mm a' }}</p>
+<p>{{ currentDate | date: 'MMMM d' }}</p>
+<p>{{ cost | currency:"INR":"symbol" }}</p>
+<p>{{ temperature | number: '1.0-0' }}</p>
