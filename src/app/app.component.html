@@ -7,8 +7,8 @@
 
 <input (keyup)="changeImage($event)" [value]="imgUrl">
 
-<app-post [img]="imgUrl" (imgSelected)="logImg($event)">
-    <p>Some Caption</p>
+<app-post *ngFor="let image of images; let i = index" [img]="imgUrl" (imgSelected)="logImg($event)">
+    <p>{{ i }}Some Caption</p>
 </app-post>
 
 <p>Hello {{ getName() }}!</p>
